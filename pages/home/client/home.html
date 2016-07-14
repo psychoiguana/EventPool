@@ -1,17 +1,14 @@
 <template name="home">
-
-	<div class="jumbotron">
+<center>
   	<h1> EventPool </h1>
 		<p> Welcome {{#if currentUser}}username! {{else}}guest!!  Please sign in to continue!{{/if}}</p>
 
-	</div>
 	
 <hr>
 
-{{#if currentUser}}
 	<form>
 	<input type="text" placeholder="Search events" name="searchbar" style="width:500px;">
 	<input type="submit" name="searchbar">
 	</form>
-{{/if}}
+	</center>
 </template>
