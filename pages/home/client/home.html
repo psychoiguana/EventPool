@@ -2,10 +2,10 @@
 
 	<div class="jumbotron">
   	<h1> Ride With Me! </h1>
-		<p> Welcome {{#if currUser}}username! {{else}}guest!  Please sign in to continue!{{/if}}</p>
+		<p> Welcome {{#if currentUser}}username! {{else}}guest!  Please sign in to continue!{{/if}}</p>
 	</div>
 <hr>
-{{#if currUser}}
+{{#if currentUser}}
 <form>
 <input type="text" placeholder="Search events" name="searchbar" style="width:500px;">
 <input type="submit" name="searchbar">
