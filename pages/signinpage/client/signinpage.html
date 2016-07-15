@@ -12,6 +12,14 @@
     <hr>
     Don't have an account? Click <a href="{{pathFor'registerpage'}}">here</a>
 
-    <p id="youFailed"></p>
+    {{#each user in users}}
+            {{#if user.username = usernameVar}} 
+                {{#if user.password = passwordVar}}
+
+                {{/if}}
+                <p>Incorrect password, try again</p>
+            {{/if}}
+        {{/each}}
+
     </center>
 </template>
