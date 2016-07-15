@@ -4,11 +4,17 @@
 		<hr>
 		<ul>
 			{{#each pool in eventPools}}
-				<li>
-					
-				</li>
+				{{> poolitem p=pool}}
 			{{/each}}
 		</ul>
 		<a href="{{pathFor'createevent'}}">Create Event</a>
 	</center>
+</template>
+
+
+<template name="poolitem">
+				<li>
+					{{p.title}} {{p.location}}  {{p.category}}
+					<button class="js-delete">delete</button>
+				</li>
 </template>

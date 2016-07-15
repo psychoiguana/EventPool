@@ -1,8 +1,16 @@
 Template.createevent.events({
-	'submit form': function(event){
+	'click .js-submit': function(event){
        event.preventDefault();
-       var eventtitleVar = event.target.eventtitle.value;
-       var locationVar = event.target.Location.value;
-       console.log("Form submitted")
+     
+       const category = $(".js-category").val();
+       const location = $(".js-location").val();
+       const title = $(".js-title").val();
+
+       const obj = {location,category,title};
+       console.dir(obj);
+       console.log("were on our way!!");
+       console.log("Form submitted");
+       Pools.insert(obj);
+       Router.go("browse");
     }
 });

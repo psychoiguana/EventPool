@@ -1,14 +1,14 @@
 <template name="createevent">
 	<center>
 	<h1>List an Event</h1>
-		<form>
+		
 			<div align = "center">
 			Event Title:
-				<input type="text" name="eventtitle" placeholder="Bon Jovi Concert">
+				<input type="text" class="js-title" name="eventtitle" placeholder="Bon Jovi Concert">
 				<br>
 				<br>
 				Category:
-			<select>
+			<select class="js-category">
 				<option>
 					Concert
 				</option>
@@ -25,11 +25,11 @@
 			<br>
 			<br>
 				Location
-				<input type="text" name="Location" placeholder="Hollywood Bowl">
+				<input type="text" class="js-location" name="Location" placeholder="Hollywood Bowl">
 				<br>
 				<br>
 			Month:
-	<select>
+	<select class="js-month">
   		<option>
   			January
   		</option>
@@ -70,7 +70,7 @@
  	<br>
  	<br>
  	Day:
- 	<select>
+ 	<select class="js-day">
  		<option>
   			1
   		</option>
@@ -168,7 +168,7 @@
  	<br>
  	<br>
  	Year:
- 		<select>
+ 		<select class="js-year">
  			<option>
  				2016
  			</option>
@@ -179,7 +179,7 @@
  		<br>
  		<br>
  	Time:
- 		<select>
+ 		<select class="js-time">
   		<option>
   			1
   		</option>
@@ -402,11 +402,8 @@
   		<option>
   			59
   		</option>
-  		<option>
-  			60
-  		</option>
   		</select>
-  		 <select>
+  		 <select class="js-ampm">
   		 	<option>
   		 		AM
   		 	</option>
@@ -416,7 +413,7 @@
   		 </select>
 			</div>
 			<br>
-			<input type="submit" value="Post Event">
-		</form>
+			<input type="submit" class="js-submit" value="Post Event">
+	  <input type="time">
 	</center>
 </template>
