@@ -6,6 +6,11 @@ if (Meteor.isClient) {
             var emailVar = event.target.registerEmail.value;
             var passwordVar = event.target.registerPassword.value;
             var confPasswordVar = event.target.registerConfPassword.value;
+            Accounts.createUser({
+              username: usernameVar,
+              email: emailVar,
+              password: passwordVar
+            })
             if (passwordVar == confPasswordVar) {
             console.log("Form submitted.");
             const email = emailVar;
@@ -23,7 +28,7 @@ if (Meteor.isClient) {
             console.log(email);console.log(password);console.log(username);
             const item = {email, username, password, isDriver, isPassenger, name, zipCode, dateOfBirth, licensePlate, licenseNumber, phoneNumber, rating};
             console.dir(item);
-            Accounts.insert(item);     
+            Accounts.insert(item);
         }
         	else {
         		document.getElementById("failMsg").innerHTML = "Passwords do not match. Try again.";
@@ -39,5 +44,5 @@ if (Meteor.isClient) {
         }
 
     })
-    
+
 }
