@@ -12,14 +12,14 @@
     <hr>
     Don't have an account? Click <a href="{{pathFor'registerpage'}}">here</a>
 
+    <ol>
     {{#each user in users}}
-            {{#if user.username = usernameVar}} 
-                {{#if user.password = passwordVar}}
-
-                {{/if}}
-                <p>Incorrect password, try again</p>
-            {{/if}}
+        <li>
+            {{user.username}}
+        </li>
         {{/each}}
+    </ol>
+ 
 
     </center>
 </template>
