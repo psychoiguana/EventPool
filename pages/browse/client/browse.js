@@ -1,6 +1,7 @@
 Template.browse.helpers({
 	eventPools: function() {
 		return Pools.find();
+		//return Pools.find({},{sort:{ename:1}});
 	},
 
 

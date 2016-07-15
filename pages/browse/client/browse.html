@@ -2,28 +2,30 @@
 	<center>
 		<h1>Events</h1>
 		<hr>
-		<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+<table class="table bordered">
+  <thead>
+		<tr>
+    <th>title</th>
+    <th>location</th>
+    <th>date</th>
+		<th>time</th>
+	</tr>
+  </thead>
+  <tbody>
+		{{#each pool in eventPools}}
+		{{>poolitem p=pool}}
+		<tr>
+
+    <td>{{p.title}}</td>
+		<td>{{p.location}}</td>
+		<td>{{p.date}}</td>
+		<td>{{p.time}}</td>
+	</tr>
+		{{/each}}
+  </tbody>
+
 </table>
-		<ul>
-			{{#each pool in eventPools}}
-				{{> poolitem p=pool}}
-			{{/each}}
-		</ul>
+
 		<a href="{{pathFor'createevent'}}">Create Event</a>
 	</center>
 </template>
@@ -31,7 +33,7 @@
 
 <template name="poolitem">
 				<li>
-					{{p.title}} {{p.location}}  {{p.category}}
+					{{p.title}} {{p.location}}  {{p.category}} {{p.date}} {{p.time}}
 					<button class="js-delete">delete</button>
 				</li>
 </template>
