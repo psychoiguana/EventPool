@@ -1,5 +1,7 @@
 <template name="browse">
 	<center>
+
+		<div class = "events">
 		<h1>Events</h1>
 		<hr>
 		<ul>
@@ -8,13 +10,19 @@
 			{{/each}}
 		</ul>
 		<a href="{{pathFor'createevent'}}">Create Event</a>
+		</div>
 	</center>
 </template>
 
 
 <template name="poolitem">
+	<center>
+			<div class = "eventItem">
 				<li>
 					{{p.title}} {{p.location}}  {{p.category}}
+				<br>
 					<button class="js-delete">delete</button>
 				</li>
-</template>
+			</div>
+	</center>
+</template> 
