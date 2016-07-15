@@ -1,22 +1,17 @@
-<template name = "signinpage">
-<center>
-    <h1>Sign in/Register</h1>
+<template name="signinpage">
+  <center>
+    <h1>Login</h1>
     <hr>
-    </center>
-  <br>
-  <div align = "center">
-  <form>
-  Username:
-   <input type = "text" class = "username">
-   <br>
-    <br>
-  Password:
-    <input type = "password" class = "password">
-    <br>
-    <br>
-    <input type="submit">
+    <form>
+        Username:
+        <input type="username" name="signinpageUsername" placeholder="johnsmith123"><br><br>
+        Password:
+        <input type="password" name="signinpagePassword" placeholder="password123"><br><br>
+        <input type="submit" value="Login">
     </form>
-<hr>
-Don't have an account? Click <a href="{{pathFor'registerpage'}}">here</a>
-    </div>
+    <hr>
+    Don't have an account? Click <a href="{{pathFor'registerpage'}}">here</a>
+
+    <p id="youFailed"></p>
+    </center>
 </template>

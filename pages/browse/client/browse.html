@@ -1,3 +1,14 @@
 <template name="browse">
-	
+	<center>
+		<h1>Events</h1>
+		<hr>
+		<ul>
+			{{#each pool in eventPools}}
+				<li>
+					
+				</li>
+			{{/each}}
+		</ul>
+		<a href="{{pathFor'createevent'}}">Create Event</a>
+	</center>
 </template>

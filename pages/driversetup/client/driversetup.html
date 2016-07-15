@@ -1,50 +1,61 @@
 <template name="driversetup">
 	<center>
 		<h1> Become a Driver!</h1>
-	</center>
+	<form>
 	<hr>
 	<div align = "center">
-		Username: 
-			<input type="text" class="username">
+		Name:
+			<input type="text" name="enterName" placeholder="John Smith">
 		<br>
 		<br>
 		Email:
-			<input type="text" class="email">
+			<input type="text" class="email" placeholder="johnsmith@email.com">
 		<br>
 		<br>
 		Zip code:
-			<input type="text" class="zipcode">
+			<input type="text" class="zipcode" placeholder="91326">
 		<br>
 		<br>
 		Date of birth:
-			<input type="text" class="dateofbirth">
+			<input type="text" class="dateofbirth"
+			placeholder="August, 18 1999">
+		<br>
+		<br>
+		License Plate Number:
+			<input type="text" name="licenseplatenumber" placeholder="LOWRIDER">
+		<br>
+		<br>
+		License Number
+			<input type="text" name="idnumber"
+			placeholder="71140">
 		<br>
 		<br>
 		Phone number:
-			<input type="text" class="phonenumber">
+			<input type="text" class="phonenumber"
+			placeholder="(543)-234-2838">
 		<br>
 		<br>
-		Password:
-			<input type="password" class="password">
-		<br>
-		<br>
-		Confirm password:
-		<input type="password" class="confirmpassword">
+		Re-enter Password:
+			<input type="password" class="password"
+			placeholder="password123">
 		<hr>
 	</div>
 	<h2 class="text-center">Terms of use and conditions</h2>	
-	<br>
-	<p class = "text-center">Do you agree to the terms and conditions?</p>
-	<center>
-		I agree to the terms and conditions: 
-			<input type="checkbox">
-	</center>
-	<br>
-	<br>
-	<center>
-		<button>
-			Submit
-		</button>
-	</center>
-</template>
+	
+	
 
+	<center> <div class="scroll">THE FOLLOWING DRIVER AGREEMENT DESCRIBES THE TERMS AND CONDITIONS ON WHICH EventPool OFFERS YOU ACCESS TO THE EventPool PLATFORM.
+	EventPool provides a platform where people attending an event  can provide transportation ("Drivers") for other persons wanting to attend that event ("Riders"). Driver has the right to evict Rider from their vehicle if they feel Rider's attitude and/or actions are substantially unsatisfactory or are an immediate threat to Driver's health. However, EventPool is not held accountable if Driver is unsatisfied with Rider's actions and/or attitude. Furthermore, EventPool will not be responsible for damages to Driver's vehicle that may be made during the transportation process; Driver's insurance is accountable for said potential damages.</div></center>
+	<br>
+
+
+		<input type="checkbox">
+		I agree to the terms and conditions: 
+			
+	<br>
+	<br>
+		<input type="submit" value="Submit">
+			<hr>
+			</form>
+			</center>
+</template>
