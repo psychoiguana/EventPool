@@ -1,7 +1,15 @@
 <template name="signinpage">
+  <center>
+    <h1>Login</h1>
+    <hr>
     <form>
-        <input type="username" name="signinpageUsername">
-        <input type="password" name="signinpagePassword">
-        <input type="submit" value="signinpageSubmit">
+        Username:
+        <input type="username" name="signinpageUsername"><br><br>
+        Password:
+        <input type="password" name="signinpagePassword"><br><br>
+        <input type="submit" value="Login">
     </form>
+    <hr>
+    Don't have an account? Click <a href="{{pathFor'registerpage'}}">here</a>
+    </center>
 </template>
