@@ -1,5 +1,5 @@
 Template.browse.helpers(
-	pools: function() {
+	events: function() {
 		return Pools.find();
 	}
 }
