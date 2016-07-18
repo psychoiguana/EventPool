@@ -14,8 +14,9 @@
 			{{/each}}
 		</tbody>
 		</table>
-
+		{{#if currentUser}}
 		<a href="{{pathFor'createevent'}}">Create Event</a>
+		{{/if}}
 		</div>
 	</center>
 </template>
