@@ -22,5 +22,8 @@ h1 {
 }
 
 
-
-
+.passenger {
+	font-family: "Copperplate";
+	font-size: 35pt;
+	color: #00008B;
+}
