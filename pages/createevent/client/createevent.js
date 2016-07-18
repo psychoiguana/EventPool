@@ -7,8 +7,10 @@ Template.createevent.events({
        const title = $(".js-title").val();
        const time = $(".js-time").val();
        const date = $(".js-date").val();
+       const driver = $(".js-creator").val();
+       const seats = $(".js-seats").val();
        const createdAt = new Date();
-       const obj = {location,category,title,time,date,createdAt};
+       const obj = {location,category,title,time,date,createdAt,driver,seats};
        console.dir(obj);
        console.log("were on our way!!");
        console.log("Form submitted");
