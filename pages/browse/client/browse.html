@@ -14,15 +14,16 @@
 			{{/each}}
 		</tbody>
 		</table>
-
+		{{#if currentUser}}
 		<a href="{{pathFor'createevent'}}">Create Event</a>
+		{{/if}}
 		</div>
 	</center>
 </template>
 
 <template name="poolitem">
 	<tr>
-		<td>{{pool.title}}</td>
+		<td><a class="js-eventClicked" href="{{pathFor 'eventlisting'}}">{{pool.title}}</a></td>
 		<td>{{pool.category}}</td>
 		<td>{{pool.location}}</td>
 		<td>{{pool.date}}</td>

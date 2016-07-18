@@ -13,11 +13,14 @@
 				  <li role="presentation"><a href="{{pathFor 'about'}}">About</a></li>
 					<!-- add more li's here for your navigation bar -->
 					<li role="presentation"><a href="{{pathFor 'browse'}}">Browse Events</a></li>
+					{{#if currentUser}}
 					<li role="presentation"><a href="{{pathFor 'passengerregister'}}">Become a Passenger!</a></li>
+					{{/if}}
 					{{#if currentUser}}
 				  <li role="presentation"><a href="{{pathFor 'driversetup'}}">Become a Driver!</a></li>
 				  {{/if}}
-				   <!--<li role="presentation"><a href="{{pathFor 'signinpage'}}">Sign In/Register</a></li>-->
+				   <!--<
+				   li role="presentation"><a href="{{pathFor 'signinpage'}}">Sign In/Register</a></li>-->
 
 				</ul>
 
@@ -29,7 +32,11 @@
 
 		<!-- Here is where the actual content of the page
 		     gets inserted by the router! -->
+		{{#if noProfile}}
+		{{> passengerregister}}
+		{{else}}
 		{{> yield}}
+		{{/if}}
 
 	</div>
 </template>
