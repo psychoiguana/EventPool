@@ -35,4 +35,20 @@
 <!--<button class = "clear">Clear</button>-->
 	</center>
 
+{{#each event in events}}
+<table class = "table table-bordered">
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Location</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td>{{event.category}}</td>
+				<td>{{event.location}}</td>
+			</tr>
+	</tbody>
+</table>
+{{/each}}
 </template> 
