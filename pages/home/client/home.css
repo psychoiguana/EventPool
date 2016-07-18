@@ -1,8 +1,19 @@
 .scroll {
     background-color: blue;
-    
     font-size: 12pt
 }
 .background{
 	background-color:blue;
+}
+.events{
+	padding-right: 4cm;
+	padding-left: 4cm;
+	padding-top: 2cm;
+	background-color: #add8e6;
+	padding-bottom: 5cm;
+}
+
+.title {
+	font-family: "Copperplate";
+	font-size: 40pt;
 }
