@@ -8,4 +8,12 @@
 	padding-top: 2cm;
 	background-color: #add8e6;
 	padding-bottom: 5cm;
+	font-size: 16pt;
+	font-family: "Copperplate";
+}
+
+.listevent {
+	font-family: "Copperplate";
+	font-size: 35pt;
+	color: #00008B;
 }
