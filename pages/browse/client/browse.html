@@ -4,29 +4,10 @@
 		<div class = "events">
 		<h1>Events</h1>
 		<hr>
-<table class="table bordered">
-  <thead>
-		<tr>
-    <th>title</th>
-    <th>location</th>
-    <th>date</th>
-		<th>time</th>
-	</tr>
-  </thead>
-  <tbody>
+
 		{{#each pool in eventPools}}
-		{{>poolitem p=pool}}
-		<tr>
-
-    <td>{{p.title}}</td>
-		<td>{{p.location}}</td>
-		<td>{{p.date}}</td>
-		<td>{{p.time}}</td>
-	</tr>
+			{{>poolitem p=pool}}
 		{{/each}}
-  </tbody>
-
-</table>
 
 		<a href="{{pathFor'createevent'}}">Create Event</a>
 		</div>
@@ -46,4 +27,4 @@
 					<hr>
 				</li>
 	</center>
-</template> 
+</template>
