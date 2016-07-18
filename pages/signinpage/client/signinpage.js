@@ -8,10 +8,14 @@ Template.signinpage.events({
 		
 
         console.log("Form submitted")
-      }
+      },
+
+
     });
 
 Template.signinpage.helpers({
         users: function() {
             return Accounts.find();
-        }
+        },
+
+});

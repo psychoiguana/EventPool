@@ -34,4 +34,11 @@
 	<br>
 <!--<button class = "clear">Clear</button>-->
 	</center>
+  <ul>
+  {{#each event in events}}
+    <li>{{event.category}} {{event.location}} </li>
+  {{/each}}
+</ul>
+
+
 </template> 
