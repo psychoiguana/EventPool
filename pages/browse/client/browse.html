@@ -10,7 +10,7 @@
 			</thead>
 						<tbody>
 			{{#each pool in eventPools}}
-				{{> poolitem pool=pool}}
+				<a href={{pathFor 'eventlisting'}}>{{> poolitem pool=pool}}</a>
 			{{/each}}
 		</tbody>
 		</table>
