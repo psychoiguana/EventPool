@@ -4,24 +4,29 @@
 		<div class = "events">
 		<h1>Events</h1>
 		<hr>
-
-		{{#each pool in eventPools}}
-			{{>poolitem p=pool}}
-		{{/each}}
+		<table class="table bordered">
+			<thead>
+				<tr><th>Name</th><th>Category</th><th>Location</th><th>Date</th><th>Time</th></tr>
+			</thead>
+						<tbody>
+			{{#each pool in eventPools}}
+				{{> poolitem pool=pool}}
+			{{/each}}
+		</tbody>
+		</table>
 
 		<a href="{{pathFor'createevent'}}">Create Event</a>
 		</div>
 	</center>
 </template>
 
-
 <template name="poolitem">
-		
-	<center>
-				<li style = "font-family: Verdana">
-					{{p.title}} {{p.location}}  {{p.category}}
-					<button class="js-delete" style = "font-family: Arial">delete</button>
-					<hr>
-				</li>
-	</center>
+	<tr>
+		<td>{{pool.title}}</td>
+		<td>{{pool.category}}</td>
+		<td>{{pool.location}}</td>
+		<td>{{pool.date}}</td>
+		<td>{{pool.time}}</td>
+		<td><button class="js-delete" style = "font-family: Arial">delete</button></td>
+	</tr>
 </template>

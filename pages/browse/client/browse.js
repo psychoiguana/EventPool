@@ -10,7 +10,9 @@ Template.browse.helpers({
 
 Template.poolitem.events({
 	"click .js-delete": function(event){
-		Pools.remove(this.p._id);
+		console.log("clicked delete");
 		console.dir(this);
-	}
+		 Pools.remove(this.pool._id);
+	},
+
 })
