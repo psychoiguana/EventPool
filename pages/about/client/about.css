@@ -5,3 +5,21 @@
 	background-color: #add8e6;
 	padding-bottom: 5cm;
 }
+
+.about {
+	font-family: "Copperplate";
+	font-size: 35pt;
+	color: #00008B;
+}
+
+.aboutinfo {
+	font-family: "Copperplate";
+	font-size: 12pt;
+	color: #00008B;
+}
+
+.creators{
+	font-family: "Copperplate";
+	font-size: 35pt;
+	color: #00008B;
+}
