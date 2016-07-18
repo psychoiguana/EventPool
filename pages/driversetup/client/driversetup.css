@@ -1,9 +1,13 @@
 div.scroll {
-	background-color: #eee;
+	background-color: #eee; 
     width: 500px;
     height: 100px;
     border: 1px dotted black;
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 8pt;
+}
+
+.events {
+	background-color: #add8e6;
 }
