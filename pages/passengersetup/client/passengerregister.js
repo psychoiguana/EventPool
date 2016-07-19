@@ -2,7 +2,7 @@ Template.passengerregister.events({
   "click .js-submit":  function(event){
         console.log("clicked it");
         event.preventDefault();
-        const Name = $(".js-name").val();
+        const name = $(".js-name").val();
         const email = $(".js-email").val();
 	    const phone = $(".js-phone").val();
         const isDriver = false;

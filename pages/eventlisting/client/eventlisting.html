@@ -49,7 +49,7 @@ Driver: {{driver}}
 
 	<tbody>
 		<tr>
-			{{#each chat in eventlistingline}}
+			{{#each event in eventlistingline}}
 			<td>
 				{{> eventlistingline account=account}}
 				Driver:{{driver}}
@@ -60,7 +60,7 @@ Driver: {{driver}}
 			{{/if}}
 			</td>
 			<td>
-				{{account.Name}}
+				{{event.name}}
 			</td>
 			{{/each}}
 		</tr>
@@ -71,6 +71,6 @@ Driver: {{driver}}
 
 <template name="eventlistingline">
 	<li>
-		{{account.Name}}
+		{{account.name}}
 	</li>
 </template>
