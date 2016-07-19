@@ -51,16 +51,9 @@ Driver: {{driver}}
 		<tr>
 			{{#each chat in eventlistingline}}
 			<td>
-<<<<<<< HEAD
 				{{> eventlistingline account=account}}
-=======
-				Driver
+				Driver:{{driver}}
 			</td>
-			<td>
-				{{driver}}
-			</td>
-		</tr>
-		<tr>
 			<td>
 			{{#if currentUser}}
 				<input type="submit" class="js-submit" value="Register">
@@ -68,7 +61,6 @@ Driver: {{driver}}
 			</td>
 			<td>
 				{{account.Name}}
->>>>>>> origin/master
 			</td>
 			{{/each}}
 		</tr>
