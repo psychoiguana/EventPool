@@ -1,6 +1,6 @@
 <template name="eventlisting">
 <div class = "eventListing">
-<h1>{{title}}</h1> 
+<h1>{{title}}</h1>
 <table class="table bordered">
 	<thead>
 	<tr>
@@ -33,36 +33,28 @@
 		</tr>
 	</tbody>
 </table>
+Driver: {{driver}}
 <table>
 	<thead>
 		<tr>
 			<th>
-				Passenger Type
+				Passenger
 			</th>
 			<th>
 				Name
 			</th>
 		</tr>
 	</thead>
+	<input type="submit" class="js-submit" value="Register">
+
 	<tbody>
-		{{#each account in Accounts}}
 		<tr>
+			{{#each chat in eventlistingline}}
 			<td>
-				Driver
+				{{> eventlistingline account=account}}
 			</td>
-			<td>
-				{{driver}}
-			</td>
+			{{/each}}
 		</tr>
-		<tr>
-			<td>
-				<input type="submit" class="js-submit" value="Register">
-			</td>
-			<td>
-				{{account.Name}}
-			</td>
-		</tr>
-		{{/each}}
 	</tbody>
 </table>
 </div>
@@ -70,6 +62,6 @@
 
 <template name="eventlistingline">
 	<li>
-		{{account.Name}}
+		{{a.name}}
 	</li>
 </template>
