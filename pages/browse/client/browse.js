@@ -12,7 +12,7 @@ Template.poolitem.events({
 	"click .js-delete": function(event){
 		console.log("clicked delete");
 		console.dir(this);
-		 Pools.remove(this.pool._id);
+		Pools.remove(this.pool._id);
 	},
 
 })

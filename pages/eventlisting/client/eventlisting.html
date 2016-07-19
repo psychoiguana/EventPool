@@ -38,20 +38,26 @@
 Driver: {{driver}}
 <table>
 	<thead>
+
 		<tr>
 			<th>
-				Passenger
-			</th>
-			<th>
-				Name
+
 			</th>
 		</tr>
+
 	</thead>
 	<tbody>
-			{{#each account in eventlistingline}}
-				{{> name}}
-			{{/each}}
+		{{#each account in passengerEvent}}
+			Passenger: {{>passengerEvent account=account}}
+		{{/each}}
 	</tbody>
 </table>
 </div>
+</template>
+<template name= "passengerEvent">
+		<tr>
+			<td>{{account.name}}</td>
+			<td>{{account.createdAt}}</td>
+			<td>{{account.email}}</td>
+		</tr>
 </template>
