@@ -50,7 +50,7 @@
 	<tbody>
 			{{#each event in events}}
 			<tr>
-				<td>{{event.title}}</td>
+				<td><a href="/eventlisting/{{event._id}}">{{event.title}}</a></td>
 				<td>{{event.category}}</td>
 				<td>{{event.location}}</td>
 			</tr>
