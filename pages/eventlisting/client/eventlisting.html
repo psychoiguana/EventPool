@@ -44,6 +44,7 @@
 		</tr>
 	</thead>
 	<tbody>
+		{{#each account in Accounts}}
 		<tr>
 			<td>
 				Driver
@@ -54,12 +55,19 @@
 		</tr>
 		<tr>
 			<td>
-				Passenger
-			</td>
-			<td>
 				<input type="submit" class="js-submit" value="Register">
 			</td>
+			<td>
+				{{account.Name}}
+			</td>
 		</tr>
+		{{/each}}
 	</tbody>
 </table>
+</template>
+
+<template name="eventlistingline">
+	<li>
+		{{account.Name}}
+	</li>
 </template>
