@@ -25,8 +25,9 @@ if (Meteor.isClient) {
             const licenseNumber = null;
             const phoneNumber = null;
             const rating = null;
+            const createdAt = new Date();
             console.log(email);console.log(password);console.log(username);
-            const item = {email, username, password, isDriver, isPassenger, name, zipCode, dateOfBirth, licensePlate, licenseNumber, phoneNumber, rating};
+            const item = {email, username, password, isDriver, isPassenger, name, zipCode, dateOfBirth, licensePlate, licenseNumber, phoneNumber, rating, createdAt};
             console.dir(item);
             Accounts.insert(item);
         }

@@ -34,6 +34,8 @@
 	</tbody>
 </table>
 <input type="submit" class="js-submit" value="Register">
+<hr>
+<hr>
 
 Driver: {{driver}}
 <table>
@@ -47,8 +49,8 @@ Driver: {{driver}}
 
 	</thead>
 	<tbody>
-		{{#each account in passengerEvent}}
-			Passenger: {{>passengerEvent account=account}}
+		{{#each account in (accountsOf riders)}}
+			Passenger: {{> passengerEvent account=account}}
 		{{/each}}
 	</tbody>
 </table>

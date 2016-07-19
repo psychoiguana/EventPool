@@ -10,7 +10,8 @@ Template.createevent.events({
        const driver = $(".js-creator").val();
        const seats = $(".js-seats").val();
        const createdAt = new Date();
-       const obj = {location,category,title,time,date,createdAt,driver,seats};
+       const riders=[Meteor.userId()];
+       const obj = {location,category,title,time,date,createdAt,driver,seats,riders};
        console.dir(obj);
        console.log("we're on our way!!");
        console.log("Form submitted");
