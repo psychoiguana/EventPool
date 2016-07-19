@@ -1,5 +1,8 @@
 <template name="home">
+<div class = "homepage">
 <center>
+<div class = "transparentbox">
+	<br>
 	<div class="welcome"> Welcome to </div>
 	<div class="title">
   		 EventPool
@@ -8,7 +11,7 @@
 
 	
 <hr>
-
+	
 	<form>
 	<select class="js-categoryDropBar">
 		<option>
@@ -33,8 +36,7 @@
 	<img src="https://pixabay.com/static/uploads/photo/2012/04/13/14/56/carpooling-32719_960_720.png">
 	<br>
 <!--<button class = "clear">Clear</button>-->
-	</center>
-
+	</div>
 {{#each event in events}}
 <table class = "table table-bordered">
 	<thead>
@@ -51,4 +53,6 @@
 	</tbody>
 </table>
 {{/each}}
+</center>
+</div>
 </template> 
