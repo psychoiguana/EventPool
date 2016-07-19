@@ -33,6 +33,8 @@
 		</tr>
 	</tbody>
 </table>
+<input type="submit" class="js-submit" value="Register">
+
 Driver: {{driver}}
 <table>
 	<thead>
@@ -45,32 +47,11 @@ Driver: {{driver}}
 			</th>
 		</tr>
 	</thead>
-	<input type="submit" class="js-submit" value="Register">
-
 	<tbody>
-		<tr>
-			{{#each event in eventlistingline}}
-			<td>
-				{{> eventlistingline account=account}}
-				Driver:{{driver}}
-			</td>
-			<td>
-			{{#if currentUser}}
-				<input type="submit" class="js-submit" value="Register">
-			{{/if}}
-			</td>
-			<td>
-				{{event.name}}
-			</td>
+			{{#each account in eventlistingline}}
+				{{> name}}
 			{{/each}}
-		</tr>
 	</tbody>
 </table>
 </div>
-</template>
-
-<template name="eventlistingline">
-	<li>
-		{{account.name}}
-	</li>
 </template>

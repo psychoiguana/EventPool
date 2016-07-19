@@ -4,13 +4,13 @@ Template.passengerregister.events({
         event.preventDefault();
         const name = $(".js-name").val();
         const email = $(".js-email").val();
-	    const phone = $(".js-phone").val();
+	      const phone = $(".js-phone").val();
         const isDriver = false;
         const birthday = null;
         const licensePlate = null;
         const userId = Meteor.userId();
         console.log("Form submitted.");
-	    const obj = {Name,email,phone,userId,isDriver,birthday,licensePlate};
+	      const obj = {name,email,phone,userId,isDriver,birthday,licensePlate};
         console.dir(obj);
         Accounts.insert(obj);
         Router.go("home");
