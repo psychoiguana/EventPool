@@ -12,6 +12,10 @@ Template.passengerregister.events({
         console.log("Form submitted.");
 	      const obj = {name,email,phone,userId,isDriver,birthday,licensePlate};
         console.dir(obj);
+        const myAccount = Accounts.findOne({userId});
+        if (myAccount) {
+	    Accounts.remove(myAccount._id);
+        }
         Accounts.insert(obj);
         Router.go("home");
    },
