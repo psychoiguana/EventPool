@@ -40,7 +40,6 @@
 
 <div class = "table-style">
 <table width = "400">
-{{#each event in events}}
 	<thead>
 		<tr>
 			<th>Category</th>
@@ -48,12 +47,13 @@
 		</tr>
 	</thead>
 	<tbody>
+			{{#each event in events}}
 			<tr>
 				<td>{{event.category}}</td>
 				<td>{{event.location}}</td>
 			</tr>
+			{{/each}}
 	</tbody>
-{{/each}}
 </table>
 </div>
 </center>
