@@ -1,9 +1,6 @@
-.events{
-	padding-right: 4cm;
-	padding-left: 4cm;
-	padding-top: 2cm;
+.eventListing{
 	background-color: #add8e6;
-	padding-bottom: 5cm;
+	opacity: 0.8;
 }
 
 h1 {
